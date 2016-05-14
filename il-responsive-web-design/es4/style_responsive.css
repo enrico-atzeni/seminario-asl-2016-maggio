@@ -1,0 +1,175 @@
+/* very general rules */
+
+body{
+	margin:0;
+	font-family: Arial;
+}
+nav li{
+	list-style: none;
+}
+.clearfix:after{
+	clear:both;
+	content:'';
+	display:block;
+}
+/* header rules */
+
+header{
+	background: #93c47d;
+	border-bottom: 5px solid #900;
+}
+
+#brand-logo{
+	margin: 15px 30px;
+	display:inline-block;
+}
+
+/* menu rules */
+
+#main-menu{
+	display:inline-block;
+}
+
+#main-menu li{
+	float: left;
+}
+#main-menu li a{
+	padding: 5px 0;
+	font-size: 22px;
+	text-decoration: none;
+	color: #900;
+}
+#main-menu li:after{
+	content: '-';
+	font-size: 24px;
+	color: #900;
+	padding: 0 10px;
+}
+#main-menu li:last-child:after{
+	content:none;
+}
+
+/* end of the header rules */
+
+/* main content rules */
+
+#page {
+    background: #f6f6f6;
+}
+#left-sidebar{
+	padding-top: 50px;
+	float:left;
+	width: 22%;
+}
+#content-wrapper{
+	float:left;
+	width: 74%;
+	padding: 50px 0 50px 3%;
+	background:#fff;
+}
+
+/* sidebar rules */
+
+#left-menu li a{
+	color: #93c47d;
+	display:block;
+	padding: 2px 0;
+	font-size: 22px;
+}
+
+/* content-wrapper rules */
+
+#content-wrapper{
+	line-height: 25px;
+	font-size: 18px;
+}
+#content-wrapper img{
+	padding: 10px 0;
+	display:block;
+	width: 100%;
+	height: auto;
+}
+
+.box{
+	float: left;
+	width: 30.3%;
+	text-align: center;
+	border-bottom: 3px solid #ccc;
+	margin: 20px 1.5%;
+}
+.box.box-little{
+	width: 31%;
+	margin: 5px 1% 0;
+	border-bottom: 2px solid #ddd;
+}
+
+.half-column{
+	width: 50%;
+	float: left;
+}
+
+/* footer rules */
+
+footer{
+	background: #93c47d;
+	font-size: 22px;
+	color: #fff;
+	padding: 30px 50px;
+}
+
+
+@media (max-width: 1200px){
+	.box.box-little{
+		width: 48%;
+	}
+}
+
+@media (max-width: 700px){
+	ul{
+		padding: 0;
+	}
+	#content-wrapper{
+		width: 94%;
+		padding: 20px 3%;
+	}
+	#left-sidebar{
+		width: 94%;
+		padding: 0 3%;
+	}
+	#left-menu li a {
+	    text-align: center;
+	    border-bottom: 1px solid #e7e7e7;
+	    padding: 8px 0;
+	}
+	#brand-logo{
+    	display:block;
+    	text-align: center;
+    	margin: 0 0 15px;
+    }
+    #main-menu{
+    	width: 100%;
+    }
+    #main-menu li {
+	    width: 100%;
+	    text-align: center;
+	    border-bottom: 1px solid #bbb;
+	    padding: 5px 0;
+	}
+	#main-menu li:after{
+		content:none;
+	}
+}
+@media (max-width: 550px){
+	.box{
+		width: 97%;
+	}
+	.half-column {
+    	width: 100%;
+    }
+    
+}
+@media (max-width: 340px){
+	.box.box-little{
+		width: 97%;
+	}
+}

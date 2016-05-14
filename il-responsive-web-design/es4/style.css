@@ -1,0 +1,116 @@
+/* very general rules */
+
+body{
+	margin:0;
+	font-family: Arial;
+}
+nav li{
+	list-style: none;
+}
+.clearfix:after{
+	clear:both;
+	content:'';
+	display:block;
+}
+/* header rules */
+
+header{
+	background: #93c47d;
+	border-bottom: 5px solid #900;
+}
+
+#brand-logo{
+	margin: 15px 30px;
+	display:inline-block;
+}
+
+/* menu rules */
+
+#main-menu{
+	display:inline-block;
+}
+
+#main-menu li{
+	float: left;
+}
+#main-menu li a{
+	padding: 5px 0;
+	font-size: 22px;
+	text-decoration: none;
+	color: #900;
+}
+#main-menu li:after{
+	content: '-';
+	font-size: 24px;
+	color: #900;
+	padding: 0 10px;
+}
+#main-menu li:last-child:after{
+	content:none;
+}
+
+/* end of the header rules */
+
+/* main content rules */
+
+#page {
+    background: #f6f6f6;
+}
+#left-sidebar{
+	padding-top: 50px;
+	float:left;
+	width: 22%;
+}
+#content-wrapper{
+	float:left;
+	width: 74%;
+	padding: 50px 0 50px 3%;
+	background:#fff;
+}
+
+/* sidebar rules */
+
+#left-menu li a{
+	color: #93c47d;
+	display:block;
+	padding: 2px 0;
+	font-size: 22px;
+}
+
+/* content-wrapper rules */
+
+#content-wrapper{
+	line-height: 25px;
+	font-size: 18px;
+}
+#content-wrapper img{
+	padding: 10px 0;
+	display:block;
+}
+
+.box{
+	float: left;
+	width: 250px;
+	text-align: center;
+	border-bottom: 3px solid #ccc;
+	margin: 20px 15px;
+}
+.box-little{
+	width: 200px;
+	margin: 5px 7px 0;
+	border-bottom: 2px solid #ddd;
+}
+
+.half-column{
+	width: 50%;
+	float: left;
+}
+
+/* footer rules */
+
+footer{
+	background: #93c47d;
+	font-size: 22px;
+	color: #fff;
+	padding: 30px 50px;
+}
